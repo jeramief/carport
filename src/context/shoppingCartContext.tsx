@@ -20,11 +20,11 @@ type ShoppingCartContext = {
   cartItems: CartItem[];
 };
 
-const ShoppingCartContext = createContext({});
+const ShoppingCartContext = createContext({} as ShoppingCartContext);
 
-export const useShoppingCart = () => {
+export function useShoppingCart() {
   return useContext(ShoppingCartContext);
-};
+}
 
 export const ShoppingCartProvider = ({
   children,
