@@ -18,7 +18,6 @@ export function CartItem({ id, quantity }: CartItemProps) {
       <img
         src={item.imgUrl}
         style={{ width: "125px", height: "75px", objectFit: "cover" }}
-        alt=""
       />
       <div className="me-auto">
         <div>
@@ -33,6 +32,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
           {formatCurrency(item.price)}
         </div>
       </div>
+
       <div>{formatCurrency(item.price * quantity)}</div>
 
       <Button
