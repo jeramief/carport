@@ -3,12 +3,12 @@ import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js";
 import axios from "axios";
 
 const CARD_OPTIONS = {
-  iconStyles: "solid",
+  iconStyle: "solid",
   style: {
     base: {
       iconColor: "#c4f0ff",
       color: "#fff",
-      fontWeight: "500",
+      fontWeight: 500,
       fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
       fontSize: "16px",
       fontSmoothing: "antialiased",
