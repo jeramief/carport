@@ -1,5 +1,6 @@
-import { Container, Nav, Button, Navbar as NavbarBS } from "react-bootstrap";
+import { Navbar as NavbarBS, Container, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { Button } from "react-bootstrap";
 import { useShoppingCart } from "../context/shoppingCartContext";
 
 export function Navbar() {
